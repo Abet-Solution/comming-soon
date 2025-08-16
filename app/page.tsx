@@ -37,7 +37,7 @@ export default function ComingSoonPage() {
       <main className="relative z-10 flex-1 flex flex-col lg:flex-row items-center justify-between px-6 lg:px-8 max-w-7xl mx-auto w-full">
         {/* Left Side Content */}
         <div className="flex-1 max-w-2xl mb-8 lg:mb-0">
-          <h1 className="text-6xl leading-tight mb-12 uppercase">
+          <h1 className="text-6xl leading-tight mb-12 uppercase text-center lg:text-left">
             <span className="font-normal">Pre-order to be</span>
             <br />
             <span className="font-normal">launched</span>
