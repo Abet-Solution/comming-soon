@@ -1,6 +1,7 @@
 import { Heading } from "@/components/heading";
 import { shiromedaRegular } from "@/fonts/fonts";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const SocialIcon = ({ href, label, platform }: {
   href: string;
@@ -14,7 +15,7 @@ const SocialIcon = ({ href, label, platform }: {
     className="group relative w-10 h-10 md:w-12 md:h-12 bg-card border border-border rounded-xl flex items-center justify-center shadow-sm hover:shadow-md hover:border-primary/40 transform hover:scale-110 transition-all duration-300"
     aria-label={label}
   >
-    <img
+    <Image
       src={`/images/${platform}.png`}
       alt={label}
       className="w-5 h-5 md:w-6 md:h-6 object-contain group-hover:scale-110 transition-transform duration-300"
@@ -39,7 +40,7 @@ export default function ComingSoonPage() {
       {/* Mobile Background Image */}
       <div className="absolute inset-0 lg:hidden">
         <div className="absolute right-0 top-0 h-full w-3/5 bg-gradient-to-l from-transparent via-background/20 to-background z-10"></div>
-        <img
+        <Image
           src="images/hero-image2.png"
           alt="Zeritu Kebede - Gospel Singer"
           className="absolute right-0 top-0 h-full w-auto object-cover object-left opacity-30"
@@ -51,7 +52,7 @@ export default function ComingSoonPage() {
         <div className="absolute top-6 left-6 md:top-8 md:left-8 z-20">
           <div className="relative group">
             <div className="absolute bg-primary/10 rounded-full blur-lg"></div>
-            <img
+            <Image
               src="/images/logo.png"
               alt="Zeritu Kebede"
               className="relative w-12 h-12 md:w-16 md:h-16 object-contain transform group-hover:scale-110 transition-transform duration-300 drop-shadow-lg"
@@ -97,7 +98,7 @@ export default function ComingSoonPage() {
               <div className="md:hidden flex flex-col h-full">
                 {/* Background Image for Mobile */}
                 <div className="absolute inset-0 z-0">
-                  <img
+                  <Image
                     src="/images/Books.png"
                     alt="Books display"
                     className="w-full h-full object-cover object-center opacity-30"
@@ -159,7 +160,7 @@ export default function ComingSoonPage() {
                 {/* Right Section - Book Image */}
                 <div className="flex-1 relative">
                   <div className="relative w-full h-full">
-                    <img
+                    <Image
                       src="/images/Books.png"
                       alt="Books display"
                       className="w-full h-full object-cover object-center"
@@ -220,7 +221,7 @@ export default function ComingSoonPage() {
 
               {/* Main image - larger and extending to bottom */}
               <div className="relative z-10">
-                <img
+                <Image
                   src="images/hero-image2.png"
                   alt="Zeritu Kebede - Gospel Singer"
                   className="w-full max-w-4xl xl:max-w-5xl h-auto object-cover rounded-t-2xl"
@@ -235,7 +236,7 @@ export default function ComingSoonPage() {
 {/* Footer - Website Credit */}
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20">
           <div className="flex items-center justify-center gap-3">
-            <img
+            <Image
               src="/images/abet-logo2.png"
               alt="Abet Solutions"
               className="w-8 h-8 md:w-10 md:h-10 object-contain hover:scale-110 transition-transform duration-300"

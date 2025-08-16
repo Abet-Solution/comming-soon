@@ -1,10 +1,11 @@
-import { Button } from "@/components/ui/button"
+import { SegmentedButton } from "@/components/buttons/segmented-button"
 import Image from "next/image"
 import Link from "next/link"
+import { ShoppingCart } from "lucide-react"
 
 export default function ComingSoonPage() {
   return (
-    <div className="relative bg-black text-white min-h-screen flex flex-col">
+    <div className="relative bg-black text-white min-h-screen flex flex-col overflow-hidden">
       {/* Vertical Grid Lines */}
       <div className="absolute inset-0 pointer-events-none">
         {Array.from({ length: 11 }, (_, i) => (
@@ -23,19 +24,25 @@ export default function ComingSoonPage() {
         <div className="w-16 h-16">
           <Image src="/images/logo.png" alt="H+ Logo" width={64} height={64} className="object-contain" />
         </div>
-        <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full">Pre-order Now</Button>
+        {/* <SegmentedButton 
+          variant="default" 
+          size="lg" 
+          icon={ShoppingCart}
+        >
+          Pre-order Now
+        </SegmentedButton> */}
       </header>
 
       {/* Main Content */}
       <main className="relative z-10 flex-1 flex flex-col lg:flex-row items-center justify-between px-6 lg:px-8 max-w-7xl mx-auto w-full">
         {/* Left Side Content */}
         <div className="flex-1 max-w-2xl mb-8 lg:mb-0">
-          <h1 className="text-6xl lg:text-8xl leading-tight mb-12">
-            <span className="font-normal">WE ARE</span>
+          <h1 className="text-6xl lg:text-7xl leading-tight mb-12">
+            <span className="font-normal">Pre-order to be</span>
             <br />
-            <span className="font-normal">COMING</span>
+            <span className="font-normal">launched</span>
             <br />
-            <span className="font-bold text-white">SOON</span>
+            <span className="font-bold text-white">Soon</span>
           </h1>
 
           {/* Music Platforms */}
@@ -74,6 +81,12 @@ export default function ComingSoonPage() {
                 />
               </Link>
             </div>
+            
+            {/* Abet Solution Credit */}
+            <div className="flex items-center gap-3 mt-14">
+              <Image src="/images/abet logo.png" alt="Abet Solution" width={50} height={50} className="object-contain" />
+              <p className="text-lg text-gray-400 font-normal">Crafted By Abet Solution</p>
+            </div>
           </div>
         </div>
 
@@ -82,7 +95,9 @@ export default function ComingSoonPage() {
         {/* Right Side - Book Cover */}
         <div className="flex-1 flex flex-col justify-center items-center relative">
           <div className="relative mb-8">
-            <Image src="/images/book-cover.png" alt="Book Cover" width={400} height={500} className="object-contain" />
+            {/* Glow effect behind the book */}
+            <div className="absolute inset-0 w-[400px] h-[500px] bg-[#A37535] blur-3xl opacity-30 rounded-full"></div>
+            <Image src="/images/book-cover.png" alt="Book Cover" width={400} height={500} className="object-contain relative z-10" />
 
             {/* Orange accent line */}
             <div className="absolute -left-8 top-1/2 w-1 h-32 bg-orange-500 transform -translate-y-1/2"></div>
