@@ -46,9 +46,9 @@ export default function ComingSoonPage() {
           </h1>
 
           {/* Music Platforms */}
-          <div className="space-y-4">
+          <div className="space-y-4 text-center lg:text-left">
             <p className="text-lg text-gray-300">FIND MY MUSIC ON</p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center lg:justify-start">
               {/* YouTube */}
               <Link href="#" className="w-10 h-10  overflow-hidden hover:scale-110 transition-transform pt-1">
                 <Image src="/images/youtube.png" alt="YouTube" width={40} height={40} className="object-cover" />
@@ -93,7 +93,7 @@ export default function ComingSoonPage() {
         <div className="w-full h-px bg-orange-500 my-8 lg:hidden"></div>
 
         {/* Right Side - Book Cover */}
-        <div className="flex-1 flex flex-col justify-center items-center relative">
+        <div className="flex-1 flex flex-col justify-center items-center lg:items-start relative">
           <div className="relative mb-8">
             {/* Glow effect behind the book */}
             <div className="absolute inset-0 w-[400px] h-[500px] bg-[#A37535] blur-3xl opacity-30 rounded-full"></div>
