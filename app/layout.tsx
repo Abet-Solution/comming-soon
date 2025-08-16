@@ -37,12 +37,12 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Comming Soon-zeritu",
-  description: "Comming Soon-zeritu",
+  title: "Coming Soon - Zeritu",
+  description: "Coming Soon - Zeritu - Stay tuned for something amazing!",
   icons:{
-    icon:['/logo.png?v=4'],
-      apple:['/logo.png?v=4'],
-      shortcut:['/logo.png?v=4']
+    icon:['/images/logo.png?v=4'],
+      apple:['/images/logo.png?v=4'],
+      shortcut:['/images/logo.png?v=4']
   }
 };
 

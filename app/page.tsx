@@ -71,7 +71,7 @@ export default function ComingSoonPage() {
               </Link>
 
               {/* SoundCloud */}
-              <Link href="#" target="_blank" className="w-10 h-10 rounded-full overflow-hidden hover:scale-110 transition-transform">
+              <Link href="https://linktr.ee/Zeritulinks" target="_blank" className="w-10 h-10 rounded-full overflow-hidden hover:scale-110 transition-transform">
                 <Image
                   src="/images/cd-baby.png"
                   alt="SoundCloud"
