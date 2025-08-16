@@ -24,20 +24,20 @@ export default function ComingSoonPage() {
         <div className="w-16 h-16">
           <Image src="/images/logo.png" alt="H+ Logo" width={64} height={64} className="object-contain" />
         </div>
-        {/* <SegmentedButton 
-          variant="default" 
+        <SegmentedButton 
+          variant="secondary" 
           size="lg" 
           icon={ShoppingCart}
         >
           Pre-order Now
-        </SegmentedButton> */}
+        </SegmentedButton>
       </header>
 
       {/* Main Content */}
       <main className="relative z-10 flex-1 flex flex-col lg:flex-row items-center justify-between px-6 lg:px-8 max-w-7xl mx-auto w-full">
         {/* Left Side Content */}
         <div className="flex-1 max-w-2xl mb-8 lg:mb-0">
-          <h1 className="text-6xl lg:text-7xl leading-tight mb-12">
+          <h1 className="text-6xl leading-tight mb-12 uppercase">
             <span className="font-normal">Pre-order to be</span>
             <br />
             <span className="font-normal">launched</span>
@@ -104,15 +104,15 @@ export default function ComingSoonPage() {
           </div>
 
           <div className="bg-orange-500/20 border border-orange-500 rounded-lg p-4 max-w-sm backdrop-blur-sm">
-            <div className="flex items-center gap-3 mb-2">
-              <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
-                <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 flex-shrink-0">
+                <Image src="/images/image 19.png" alt="Megaphone Icon" width={48} height={48} className="object-contain" />
               </div>
-              <h3 className="text-white font-semibold">SIGNED AUTOGRAPH</h3>
+              <div className="flex-1">
+                <h3 className="text-white font-semibold mb-1">SIGNED AUTOGRAPH</h3>
+                <p className="text-gray-300 text-sm">The First Orders Will Come With Exclusive AutoGraph Signed Books!</p>
+              </div>
             </div>
-            <p className="text-gray-300 text-sm">The First Orders Will Come With Exclusive AutoGraph Signed Books!</p>
           </div>
                  </div>
        </main>

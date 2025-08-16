@@ -4,6 +4,7 @@ import {
   Geist_Mono,
   Plus_Jakarta_Sans,
   Protest_Strike,
+  Outfit,
 } from "next/font/google";
 import "./globals.css";
 
@@ -29,6 +30,12 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   weight: ["400", "500", "600", "700"],
 });
 
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
 export const metadata: Metadata = {
   title: "Comming Soon-zeritu",
   description: "Comming Soon-zeritu",
@@ -45,7 +52,7 @@ export default function RootLayout({
         <meta charSet="utf-8" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${protestStrike.variable} ${plusJakartaSans.variable}  antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${protestStrike.variable} ${plusJakartaSans.variable} ${outfit.variable} antialiased`}
       >
         {children}
       </body>
