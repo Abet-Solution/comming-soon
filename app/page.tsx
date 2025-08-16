@@ -104,7 +104,7 @@ export default function ComingSoonPage() {
           </div>
 
           <div className="bg-orange-500/20 border border-orange-500 rounded-lg p-4 max-w-sm backdrop-blur-sm text-center lg:text-left">
-            <div className="flex items-center gap-3 flex-col lg:flex-row">
+            <div className="flex items-center gap-3 flex-row">
               <div className="w-12 h-12 flex-shrink-0">
                 <Image src="/images/image 19.png" alt="Megaphone Icon" width={48} height={48} className="object-contain" />
               </div>
