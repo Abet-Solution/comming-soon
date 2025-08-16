@@ -29,7 +29,7 @@ export default function ComingSoonPage() {
           size="lg" 
           icon={ShoppingCart}
         >
-          Pre-order Now
+          Order Now
         </SegmentedButton>
       </header>
 
