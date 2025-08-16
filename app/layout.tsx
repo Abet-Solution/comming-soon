@@ -39,6 +39,11 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Comming Soon-zeritu",
   description: "Comming Soon-zeritu",
+  icons:{
+    icon:['/logo.png?v=4'],
+      apple:['/logo.png?v=4'],
+      shortcut:['/logo.png?v=4']
+  }
 };
 
 export default function RootLayout({
