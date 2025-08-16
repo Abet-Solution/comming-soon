@@ -129,9 +129,9 @@
   .footer-gradient {
     background: radial-gradient(
       circle at center,
-      oklch(0.1948 0.0741 256.26 / 0.95) 0%,
-      oklch(0.1948 0.0741 256.26 / 0.99) 50%,
-      oklch(0.1948 0.0741 256.26) 100%
+      oklch(0% 0 0 / 0.95) 0%,
+      oklch(0% 0 0 / 0.99) 50%,
+      oklch(0% 0 0) 100%
     );
   }
     .animate-spin-slow {
