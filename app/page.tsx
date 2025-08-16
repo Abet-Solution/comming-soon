@@ -82,11 +82,11 @@ export default function ComingSoonPage() {
               </Link>
             </div>
             
-            {/* Abet Solution Credit */}
-            <div className="flex items-center gap-3 mt-14">
-              <Image src="/images/abet logo.png" alt="Abet Solution" width={50} height={50} className="object-contain" />
-              <p className="text-lg text-gray-400 font-normal">Crafted By Abet Solution</p>
-            </div>
+                         {/* Abet Solution Credit - Desktop Only */}
+             <div className="hidden lg:flex items-center gap-3 mt-14">
+               <Image src="/images/abet logo.png" alt="Abet Solution" width={50} height={50} className="object-contain" />
+               <p className="text-lg text-gray-400 font-normal">Crafted By Abet Solution</p>
+             </div>
           </div>
         </div>
 
@@ -114,8 +114,16 @@ export default function ComingSoonPage() {
             </div>
             <p className="text-gray-300 text-sm">The First Orders Will Come With Exclusive AutoGraph Signed Books!</p>
           </div>
-        </div>
-      </main>
-    </div>
-  )
-}
+                 </div>
+       </main>
+
+       {/* Footer - Mobile Only */}
+       <footer className="lg:hidden relative z-10 p-6">
+         <div className="flex items-center justify-center gap-3">
+           <Image src="/images/abet logo.png" alt="Abet Solution" width={40} height={40} className="object-contain" />
+           <p className="text-base text-gray-400 font-normal">Crafted By Abet Solution</p>
+         </div>
+       </footer>
+     </div>
+   )
+ }
